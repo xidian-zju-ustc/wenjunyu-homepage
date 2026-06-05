@@ -1,253 +1,318 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Academic homepage of Wenjun Yu, Associate Professor at Xidian University. Research in coding theory, combinatorics, information theory, distributed storage, and DNA storage." />
-  <title>Wenjun Yu | Academic Homepage</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wenjun Yu | Coding Theory & Combinatorics</title>
+  <meta name="description" content="Academic homepage of Wenjun Yu, Associate Professor at Xidian University. Research in coding theory, combinatorics, information theory, distributed storage, and DNA storage.">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Wenjun Yu homepage">
+    <a class="brand" href="#home" aria-label="Wenjun Yu homepage">
       <span class="brand-mark">WY</span>
       <span>Wenjun Yu</span>
     </a>
-    <nav aria-label="Primary navigation">
-      <a href="#news">News</a>
+    <nav aria-label="Main navigation">
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#path">Academic Path</a>
+      <a href="#collaborators">Collaborators</a>
       <a href="#talks">Talks</a>
       <a href="#service">Service</a>
     </nav>
   </header>
 
-  <main id="top">
+  <main id="home">
     <section class="hero">
       <div class="hero-content">
         <p class="eyebrow">Coding Theory · Combinatorics · Information Theory</p>
         <h1>Wenjun Yu</h1>
         <p class="subtitle">
           Associate Professor at the Institute of Mathematics and Interdisciplinary Sciences,
-          Xidian University. My research focuses on discrete structures for reliable information
-          storage, including coding theory, extremal combinatorics, distributed storage, and DNA storage.
+          Xidian University. My research lies at the interface of coding theory, extremal
+          combinatorics, graph theory, distributed storage, DNA storage, and reliable information systems.
         </p>
+
         <div class="hero-actions">
           <a class="button primary" href="mailto:yuwenjun@xidian.edu.cn">Email</a>
-          <a class="button" href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="button" href="cv.pdf">CV</a>
+          <a class="button" href="https://scholar.google.com/citations?user=55Ceag4AAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="button" href="My_Resume.pdf" target="_blank" rel="noopener">CV</a>
           <a class="button" href="#publications">Publications</a>
         </div>
       </div>
 
-      <aside class="profile-card" aria-label="Profile information">
-        <div class="photo-placeholder">
-          <span>Photo</span>
+      <aside class="contact-panel" aria-label="Profile information">
+        <div class="photo-card">
+          <div class="photo-placeholder">WY</div>
+          <p class="photo-note">Add a formal academic photo here later.</p>
         </div>
-        <div class="profile-info">
-          <h2>Wenjun Yu</h2>
-          <p><strong>Associate Professor</strong></p>
+
+        <div>
+          <p class="label">Current Position</p>
+          <strong>Associate Professor</strong>
           <p>Institute of Mathematics and Interdisciplinary Sciences</p>
           <p>Xidian University</p>
-          <p class="profile-email"><a href="mailto:yuwenjun@xidian.edu.cn">yuwenjun@xidian.edu.cn</a></p>
+        </div>
+
+        <div>
+          <p class="label">Email</p>
+          <p><a href="mailto:yuwenjun@xidian.edu.cn">yuwenjun@xidian.edu.cn</a></p>
+          <p><a href="mailto:yuwenjun@mail.ustc.edu.cn">yuwenjun@mail.ustc.edu.cn</a></p>
         </div>
       </aside>
+
+      <span class="formula f1">C ⊆ Σ<sup>n</sup></span>
+      <span class="formula f2">d<sub>H</sub>(x,y)</span>
+      <span class="formula f3">R = log |C| / n</span>
+      <span class="formula f4">G = (V,E)</span>
     </section>
 
-    <section id="news" class="section compact-section">
+    <section class="section news-section" id="news">
       <div class="section-heading">
         <p class="section-kicker">News</p>
         <h2>Recent Updates</h2>
       </div>
+
       <div class="news-list">
         <article>
-          <time>2026</time>
+          <span>2026</span>
           <p>Joined Xidian University as Associate Professor.</p>
         </article>
         <article>
-          <time>2026</time>
-          <p>Paper on zero skip-cost generalized fractional repetition codes appeared in <em>IEEE Transactions on Information Theory</em>.</p>
+          <span>2026</span>
+          <p>Several papers appeared in <em>IEEE Transactions on Information Theory</em>.</p>
         </article>
         <article>
-          <time>2025</time>
-          <p>Paper on optimal codes correcting tandem duplications for nanopore sequencing appeared in <em>IEEE Transactions on Information Theory</em>.</p>
+          <span>2025</span>
+          <p>Gave talks on tandem duplication codes and related coding problems.</p>
         </article>
       </div>
     </section>
 
-    <section id="research" class="section two-column">
-      <div class="section-heading">
+    <section class="section two-column" id="research">
+      <div>
         <p class="section-kicker">Research</p>
         <h2>Discrete structures for reliable information storage.</h2>
       </div>
+
       <div class="prose">
         <p>
-          My work studies mathematical structures behind reliable storage and communication.
-          The main themes include error-correcting codes, extremal and probabilistic combinatorics,
-          graph-theoretic methods, and information-theoretic models motivated by distributed storage
-          and DNA storage systems.
+          My research studies mathematical structures behind reliable storage and communication.
+          I work on coding theory, extremal and probabilistic combinatorics, graph theory,
+          and information-theoretic models motivated by distributed storage and DNA storage systems.
         </p>
+
         <div class="research-cards">
           <article>
             <h3>Coding Theory</h3>
-            <p>Codes for insertions, deletions, duplications, reconstructions, and related channels.</p>
+            <p>Error-correcting codes, sequence reconstruction, insertion/deletion channels, duplication errors.</p>
           </article>
           <article>
             <h3>Extremal Combinatorics</h3>
-            <p>Set systems, graph methods, finite-field problems, and Bollobás-type theorems.</p>
+            <p>Set systems, intersection theorems, Bollobás-type inequalities, finite-field extremal problems.</p>
           </article>
           <article>
-            <h3>DNA Storage</h3>
-            <p>Combinatorial and coding-theoretic models for reliable molecular data storage.</p>
+            <h3>Storage Systems</h3>
+            <p>Distributed storage, fractional repetition codes, access balancing, DNA storage models.</p>
           </article>
           <article>
-            <h3>Distributed Storage</h3>
-            <p>Fractional repetition codes, access balancing, repair schemes, and storage reliability.</p>
+            <h3>Information Theory</h3>
+            <p>Capacity problems, combinatorial channel models, graph-theoretic information structures.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="publications" class="section">
-      <div class="section-heading wide">
-        <p class="section-kicker">Selected Work</p>
-        <h2>Selected Publications</h2>
-        <p class="muted">A selected list of publications in coding theory, combinatorics, and information storage systems.</p>
+    <section class="section" id="publications">
+      <div class="section-heading">
+        <p class="section-kicker">Publications</p>
+        <h2>Main Papers</h2>
+        <p>
+          A fuller and automatically updated list is available on
+          <a class="text-link" href="https://scholar.google.com/citations?user=55Ceag4AAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>.
+        </p>
       </div>
 
       <div class="publication-list">
         <article>
           <span class="pub-year">2026</span>
-          <div>
-            <h3>On Zero Skip-Cost Generalized Fractional Repetition Codes from Covering Designs</h3>
-            <p><strong>Wenjun Yu</strong>, Bo-Jun Yuan, Moshe Schwartz. <em>IEEE Transactions on Information Theory</em>, 72(4), 2123–2132.</p>
-          </div>
+          <p><strong>Wenjun Yu</strong>, Bo-Jun Yuan, Moshe Schwartz.
+            On Zero Skip-Cost Generalized Fractional Repetition Codes from Covering Designs.
+            <em>IEEE Transactions on Information Theory</em>, 72(4), 2123–2132.</p>
         </article>
+
         <article>
           <span class="pub-year">2026</span>
-          <div>
-            <h3>Sequence Reconstruction under Channels with Multiple Bursts of Insertions or Deletions</h3>
-            <p>Zhaojun Lan, Yubo Sun, <strong>Wenjun Yu</strong>, Gennian Ge. <em>IEEE Transactions on Information Theory</em>, 72(1), 315–330.</p>
-          </div>
+          <p>Zhaojun Lan, Yubo Sun, <strong>Wenjun Yu</strong>, Gennian Ge.
+            Sequence reconstruction under channels with multiple bursts of insertions or deletions.
+            <em>IEEE Transactions on Information Theory</em>, 72(1), 315–330.</p>
         </article>
+
         <article>
           <span class="pub-year">2026</span>
-          <div>
-            <h3>Codes Correcting Two Bursts of Exactly <em>b</em> Deletions</h3>
-            <p>Zuo Ye, Yubo Sun, <strong>Wenjun Yu</strong>, Gennian Ge, Ohad Elishco. <em>IEEE Transactions on Information Theory</em>, 72(4), 2083–2098.</p>
-          </div>
+          <p>Zuo Ye, Yubo Sun, <strong>Wenjun Yu</strong>, Gennian Ge, Ohad Elishco.
+            Codes Correcting Two Bursts of Exactly b Deletions.
+            <em>IEEE Transactions on Information Theory</em>, 72(4), 2083–2098.</p>
         </article>
+
         <article>
           <span class="pub-year">2025</span>
-          <div>
-            <h3>On the Asymptotic Rate of Optimal Codes that Correct Tandem Duplications for Nanopore Sequencing</h3>
-            <p><strong>Wenjun Yu</strong>, Zuo Ye, Moshe Schwartz. <em>IEEE Transactions on Information Theory</em>, 71(5), 3569–3581.</p>
-          </div>
+          <p><strong>Wenjun Yu</strong>, Zuo Ye, Moshe Schwartz.
+            On the Asymptotic Rate of Optimal Codes that Correct Tandem Duplications for Nanopore Sequencing.
+            <em>IEEE Transactions on Information Theory</em>, 71(5), 3569–3581.</p>
         </article>
+
+        <article>
+          <span class="pub-year">2024</span>
+          <p><strong>Wenjun Yu</strong>, Moshe Schwartz.
+            On duplication-free codes for disjoint or equal-length errors.
+            <em>Designs, Codes and Cryptography</em>, 92(10), 2845–2861.</p>
+        </article>
+
+        <article>
+          <span class="pub-year">2024</span>
+          <p>Zuo Ye, <strong>Wenjun Yu</strong>, Ohad Elishco.
+            Codes over absorption channels.
+            <em>IEEE Transactions on Information Theory</em>, 70(6), 3981–4001.</p>
+        </article>
+
         <article>
           <span class="pub-year">2023</span>
-          <div>
-            <h3>Embedding Bipartite Distance Graphs under Hamming Metric in Finite Fields</h3>
-            <p>Zixiang Xu, <strong>Wenjun Yu</strong>, Gennian Ge. <em>Journal of Combinatorial Theory, Series A</em>, 198, 105765.</p>
-          </div>
+          <p><strong>Wenjun Yu</strong>, Yuanxiao Xi, Xin Wei, Gennian Ge.
+            Balanced Set Codes With Small Intersections.
+            <em>IEEE Transactions on Information Theory</em>, 69(1), 147–156.</p>
         </article>
+
+        <article>
+          <span class="pub-year">2023</span>
+          <p>Zixiang Xu, <strong>Wenjun Yu</strong>, Gennian Ge.
+            Embedding bipartite distance graphs under Hamming metric in finite fields.
+            <em>Journal of Combinatorial Theory, Series A</em>, 198, 105765.</p>
+        </article>
+
         <article>
           <span class="pub-year">2021</span>
-          <div>
-            <h3>Optimal Fraction Repetition Codes for Access-Balancing in Distributed Storage</h3>
-            <p><strong>Wenjun Yu</strong>, Xiande Zhang, Gennian Ge. <em>IEEE Transactions on Information Theory</em>, 67(3), 1630–1640.</p>
-          </div>
+          <p><strong>Wenjun Yu</strong>, Xiangliang Kong, Yuanxiao Xi, Xiande Zhang, Gennian Ge.
+            Bollobás-type theorems for hemi-bundled two families.
+            <em>European Journal of Combinatorics</em>, 100, 103438.</p>
+        </article>
+
+        <article>
+          <span class="pub-year">2021</span>
+          <p><strong>Wenjun Yu</strong>, Xiande Zhang, Gennian Ge.
+            Optimal fraction repetition codes for access-balancing in distributed storage.
+            <em>IEEE Transactions on Information Theory</em>, 67(3), 1630–1640.</p>
         </article>
       </div>
 
       <div class="subsection">
         <h3>Submitted Manuscripts</h3>
         <ul class="compact-list">
-          <li><strong>Wenjun Yu</strong>, Yubo Sun, Zixiang Xu, Gennian Ge, Moshe Schwartz. Optimal Reconstruction Codes with Given Reads in Multiple Burst-Substitutions Channels.</li>
-          <li><strong>Wenjun Yu</strong>, Moshe Schwartz. On the Capacity of Sequences of Coloring Channels.</li>
+          <li><strong>Wenjun Yu</strong>, Yubo Sun, Zixiang Xu, Gennian Ge, Moshe Schwartz.
+            Optimal Reconstruction Codes with Given Reads in Multiple Burst-Substitutions Channels.</li>
+          <li><strong>Wenjun Yu</strong>, Moshe Schwartz.
+            On the Capacity of Sequences of Coloring Channels.</li>
         </ul>
       </div>
     </section>
 
-    <section id="path" class="section timeline-section">
-      <div class="section-heading">
-        <p class="section-kicker">Appointments &amp; Education</p>
+    <section class="section timeline-section" id="path">
+      <div>
+        <p class="section-kicker">Appointments & Education</p>
         <h2>Academic Path</h2>
       </div>
+
       <ol class="timeline">
         <li>
           <span class="time">2026–present</span>
           <div>
             <strong>Associate Professor</strong>
-            <p>Institute of Mathematics and Interdisciplinary Sciences, Xidian University.</p>
+            <p>Institute of Mathematics and Interdisciplinary Sciences, Xidian University</p>
           </div>
         </li>
         <li>
           <span class="time">2023–2026</span>
           <div>
             <strong>Postdoctoral Researcher</strong>
-            <p>School of Electrical and Computer Engineering, Ben-Gurion University of the Negev. Advisor: Prof. Moshe Schwartz.</p>
+            <p>School of Electrical and Computer Engineering, Ben-Gurion University of the Negev</p>
+            <p>Advisor: Prof. Moshe Schwartz</p>
           </div>
         </li>
         <li>
           <span class="time">2021–2023</span>
           <div>
             <strong>Senior Engineer</strong>
-            <p>Huawei.</p>
+            <p>Huawei Company</p>
           </div>
         </li>
         <li>
           <span class="time">2016–2021</span>
           <div>
             <strong>Ph.D. in Mathematics</strong>
-            <p>University of Science and Technology of China. Advisor: Prof. Xiande Zhang.</p>
+            <p>University of Science and Technology of China</p>
+            <p>Advisor: Prof. Xiande Zhang</p>
           </div>
         </li>
         <li>
           <span class="time">2012–2016</span>
           <div>
             <strong>B.Sc. in Mathematics</strong>
-            <p>Northwest University.</p>
+            <p>Department of Mathematics, Northwest University</p>
           </div>
         </li>
       </ol>
     </section>
 
-    <section id="collaborators" class="section compact-section">
-      <div class="section-heading wide">
+    <section class="section" id="collaborators">
+      <div class="section-heading">
         <p class="section-kicker">Collaborators</p>
-        <h2>Selected Collaborators</h2>
+        <h2>Collaborators</h2>
+        <p>Based on coauthored publications and submitted manuscripts.</p>
       </div>
+
       <ul class="collaborator-list">
-        <li><strong>Moshe Schwartz</strong><span>Ben-Gurion University of the Negev</span></li>
-        <li><strong>Gennian Ge</strong><span>Capital Normal University</span></li>
-        <li><strong>Xiande Zhang</strong><span>University of Science and Technology of China</span></li>
-        <li><strong>Yubo Sun</strong><span>Capital Normal University</span></li>
         <li><strong>Ohad Elishco</strong><span>Ben-Gurion University of the Negev</span></li>
+        <li><strong>Gennian Ge</strong><span>Capital Normal University</span></li>
+        <li><strong>Xiangliang Kong</strong><span>University of Science and Technology of China</span></li>
+        <li><strong>Zhaojun Lan</strong><span>Capital Normal University</span></li>
+        <li><strong>Moshe Schwartz</strong><span>Ben-Gurion University of the Negev</span></li>
+        <li><strong>Yubo Sun</strong><span>Capital Normal University</span></li>
+        <li><strong>Xin Wei</strong><span>Institute for Basic Science</span></li>
+        <li><strong>Yuanxiao Xi</strong><span>Zhejiang University</span></li>
+        <li><strong>Zixiang Xu</strong><span>Institute for Basic Science</span></li>
+        <li><strong>Zuo Ye</strong><span>Xidian University</span></li>
+        <li><strong>Bo-Jun Yuan</strong><span>Zhejiang University of Science and Technology</span></li>
+        <li><strong>Xiande Zhang</strong><span>University of Science and Technology of China</span></li>
       </ul>
     </section>
 
-    <section id="talks" class="section two-column">
-      <div class="section-heading">
-        <p class="section-kicker">Seminars &amp; Conferences</p>
+    <section class="section two-column" id="talks">
+      <div>
+        <p class="section-kicker">Seminars & Conferences</p>
         <h2>Recent Talks</h2>
       </div>
+
       <ul class="talk-list">
         <li><span>2025.12</span> University of Science and Technology of China, Hefei. “Shannon Capacity of Two Channels.”</li>
         <li><span>2025.07</span> Xidian University, Xi'an. “Optimal Codes That Correct Tandem Duplications for Nanopore Sequencing.”</li>
         <li><span>2025.01</span> Xidian University, Xi'an. “Repair Schemes and Properties of Linear Codes.”</li>
         <li><span>2023.11</span> Workshop on Discrete Mathematics and Discrete Geometry, Hangzhou Normal University. “DNA storage-balanced set codes.”</li>
         <li><span>2023.11</span> Zhejiang Lab, Hangzhou. “Balanced set codes.”</li>
+        <li><span>2023.11</span> Zhejiang University of Science and Technology, Hangzhou. “DNA storage: Balanced set codes with small discrepancy.”</li>
         <li><span>2023.10</span> The 8th Qilu Youth Forum of Shandong University, Qingdao. “Several problems on DNA storage systems.”</li>
+        <li><span>2021.11</span> The 14th USTC-CityU Online PhD Student Workshop 2021. “Optimal Fraction Repetition Codes with Access-Balancing.”</li>
+        <li><span>2021.05</span> The 10th International Conference on Finite Fields and Their Applications, Luoyang. “Optimal Fraction Repetition Codes for Access-Balancing in Distributed Storage.”</li>
       </ul>
     </section>
 
-    <section id="service" class="section service-grid">
-      <div class="section-heading">
+    <section class="section service-grid" id="service">
+      <div>
         <p class="section-kicker">Community</p>
-        <h2>Academic Service &amp; Teaching</h2>
+        <h2>Academic Service & Teaching</h2>
       </div>
+
       <article class="service-card">
         <h3>Referee Service</h3>
         <ul>
@@ -258,12 +323,14 @@
           <li>BMC Bioinformatics</li>
           <li>IEEE International Symposium on Information Theory</li>
         </ul>
-      </article>
-      <article class="service-card">
+
         <h3>Reviewer Panel</h3>
         <ul>
           <li>Mathematical Reviews</li>
         </ul>
+      </article>
+
+      <article class="service-card">
         <h3>Teaching</h3>
         <ul>
           <li>Teaching Assistant, Combinatorics, Fall 2017</li>
@@ -275,14 +342,9 @@
   </main>
 
   <footer>
-    <div>
-      <strong>Wenjun Yu</strong>
-      <p>Institute of Mathematics and Interdisciplinary Sciences, Xidian University</p>
-    </div>
-    <div>
-      <p><a href="mailto:yuwenjun@xidian.edu.cn">yuwenjun@xidian.edu.cn</a></p>
-      <p>Last updated: June 2026</p>
-    </div>
+    <p>© 2026 Wenjun Yu</p>
+    <p><a href="mailto:yuwenjun@xidian.edu.cn">yuwenjun@xidian.edu.cn</a></p>
+    <p>Last updated: June 2026</p>
   </footer>
 </body>
 </html>
