@@ -6,7 +6,7 @@
   <title>Wenjun Yu | Coding Theory & Combinatorics</title>
   <meta name="description" content="Academic homepage of Wenjun Yu, Associate Professor at Xidian University. Research in coding theory, combinatorics, information theory, distributed storage, and DNA storage.">
   <link rel="stylesheet" href="styles.css">
-  <script src="//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
+  <script src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
 </head>
 
 <body>
@@ -350,5 +350,40 @@
       Visits <span id="busuanzi_site_pv">Loading...</span> · Visitors <span id="busuanzi_site_uv">Loading...</span>
     </p>
   </footer>
+  <script>
+    window.addEventListener("load", function () {
+      window.setTimeout(function () {
+        var pv = document.getElementById("busuanzi_site_pv");
+        var uv = document.getElementById("busuanzi_site_uv");
+
+        if (!pv || !uv || pv.textContent !== "Loading..." || uv.textContent !== "Loading...") {
+          return;
+        }
+
+        fetch("https://cdn.busuanzi.cc/api.php", {
+          method: "POST",
+          body: JSON.stringify({
+            url: window.location.href,
+            referrer: document.referrer
+          })
+        })
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            if (data.busuanzi_site_pv) {
+              pv.textContent = data.busuanzi_site_pv;
+            }
+            if (data.busuanzi_site_uv) {
+              uv.textContent = data.busuanzi_site_uv;
+            }
+          })
+          .catch(function () {
+            pv.textContent = "--";
+            uv.textContent = "--";
+          });
+      }, 1600);
+    });
+  </script>
 </body>
 </html>
