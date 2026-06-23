@@ -496,15 +496,11 @@ footer p {
 .visitor-stats {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-weight: 700;
-  color: var(--accent-dark);
 }
 
-.visitor-stats span {
-  min-width: 4ch;
-  color: var(--warm);
-  font-variant-numeric: tabular-nums;
+.visitor-stats img {
+  display: block;
+  height: 20px;
 }
 
 @media (max-width: 860px) {

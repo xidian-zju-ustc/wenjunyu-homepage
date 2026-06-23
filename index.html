@@ -346,49 +346,8 @@
     <p><a href="mailto:yuwenjun@xidian.edu.cn">yuwenjun@xidian.edu.cn</a></p>
     <p>Last updated: June 2026</p>
     <p class="visitor-stats" aria-label="Visitor statistics">
-      Visits <span id="busuanzi_site_pv">Loading...</span>
+      <img src="https://hits.sh/wenjunyu.github.io/wenjunyu-homepage-main.svg?label=Visits&color=b3541e&labelColor=034c4a" alt="Visits">
     </p>
   </footer>
-  <script>
-    (function () {
-      var pv = document.getElementById("busuanzi_site_pv");
-
-      if (!pv) {
-        return;
-      }
-
-      var statsUrl = window.location.href;
-
-      if (window.location.protocol === "file:") {
-        statsUrl = "https://wy.local/";
-      }
-
-      fetch("https://cdn.busuanzi.cc/api.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          url: statsUrl,
-          referrer: document.referrer
-        })
-      })
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (data) {
-          var sitePv = Number(data.busuanzi_site_pv);
-
-          if (Number.isFinite(sitePv)) {
-            pv.textContent = sitePv;
-          } else {
-            pv.textContent = "--";
-          }
-        })
-        .catch(function () {
-          pv.textContent = "--";
-        });
-    }());
-  </script>
 </body>
 </html>
