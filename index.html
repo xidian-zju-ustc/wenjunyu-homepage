@@ -346,15 +346,14 @@
     <p><a href="mailto:yuwenjun@xidian.edu.cn">yuwenjun@xidian.edu.cn</a></p>
     <p>Last updated: June 2026</p>
     <p class="visitor-stats" aria-label="Visitor statistics">
-      Visits <span id="busuanzi_site_pv">Loading...</span> · Visitors <span id="busuanzi_site_uv">Loading...</span>
+      Visits <span id="busuanzi_site_pv">Loading...</span>
     </p>
   </footer>
   <script>
     (function () {
       var pv = document.getElementById("busuanzi_site_pv");
-      var uv = document.getElementById("busuanzi_site_uv");
 
-      if (!pv || !uv) {
+      if (!pv) {
         return;
       }
 
@@ -379,19 +378,15 @@
         })
         .then(function (data) {
           var sitePv = Number(data.busuanzi_site_pv);
-          var siteUv = Number(data.busuanzi_site_uv);
 
-          if (Number.isFinite(sitePv) && Number.isFinite(siteUv)) {
+          if (Number.isFinite(sitePv)) {
             pv.textContent = sitePv;
-            uv.textContent = siteUv;
           } else {
             pv.textContent = "--";
-            uv.textContent = "--";
           }
         })
         .catch(function () {
           pv.textContent = "--";
-          uv.textContent = "--";
         });
     }());
   </script>
