@@ -6,7 +6,6 @@
   <title>Wenjun Yu | Coding Theory & Combinatorics</title>
   <meta name="description" content="Academic homepage of Wenjun Yu, Associate Professor at Xidian University. Research in coding theory, combinatorics, information theory, distributed storage, and DNA storage.">
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
 </head>
 
 <body>
@@ -351,39 +350,50 @@
     </p>
   </footer>
   <script>
-    window.addEventListener("load", function () {
-      window.setTimeout(function () {
-        var pv = document.getElementById("busuanzi_site_pv");
-        var uv = document.getElementById("busuanzi_site_uv");
+    (function () {
+      var pv = document.getElementById("busuanzi_site_pv");
+      var uv = document.getElementById("busuanzi_site_uv");
 
-        if (!pv || !uv || pv.textContent !== "Loading..." || uv.textContent !== "Loading...") {
-          return;
-        }
+      if (!pv || !uv) {
+        return;
+      }
 
-        fetch("https://cdn.busuanzi.cc/api.php", {
-          method: "POST",
-          body: JSON.stringify({
-            url: window.location.href,
-            referrer: document.referrer
-          })
+      var statsUrl = window.location.href;
+
+      if (window.location.protocol === "file:") {
+        statsUrl = "https://wy.local/";
+      }
+
+      fetch("https://cdn.busuanzi.cc/api.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          url: statsUrl,
+          referrer: document.referrer
         })
-          .then(function (response) {
-            return response.json();
-          })
-          .then(function (data) {
-            if (data.busuanzi_site_pv) {
-              pv.textContent = data.busuanzi_site_pv;
-            }
-            if (data.busuanzi_site_uv) {
-              uv.textContent = data.busuanzi_site_uv;
-            }
-          })
-          .catch(function () {
+      })
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          var sitePv = Number(data.busuanzi_site_pv);
+          var siteUv = Number(data.busuanzi_site_uv);
+
+          if (Number.isFinite(sitePv) && Number.isFinite(siteUv)) {
+            pv.textContent = sitePv;
+            uv.textContent = siteUv;
+          } else {
             pv.textContent = "--";
             uv.textContent = "--";
-          });
-      }, 1600);
-    });
+          }
+        })
+        .catch(function () {
+          pv.textContent = "--";
+          uv.textContent = "--";
+        });
+    }());
   </script>
 </body>
 </html>
