@@ -493,6 +493,20 @@ footer p {
   margin-bottom: 0;
 }
 
+.visitor-stats {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.visitor-stats span {
+  min-width: 4ch;
+  color: var(--warm);
+  font-variant-numeric: tabular-nums;
+}
+
 @media (max-width: 860px) {
   .site-header {
     align-items: flex-start;
